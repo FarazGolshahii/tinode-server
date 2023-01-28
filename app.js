@@ -18,8 +18,10 @@ app.use('/', userController);
 app.use('/', topicController);
 // Uncomment and modify the route if you want to use any controllers
 
+const port =process.env.port || 1780
+
 // Start Anything here
-app.listen(1780, () => {
+app.listen(port, () => {
     ConnectToMySQLDatabase();
     AuthTheServer();
     GetMessagesFromServer();

@@ -14,23 +14,16 @@ export const EventEmitter = new events.EventEmitter();
 // Use your dependencies here
 
 // use all controllers(APIs) here
-// app.use('/', userController);
-// app.use('/', topicController);
+app.use('/', userController);
+app.use('/', topicController);
 // Uncomment and modify the route if you want to use any controllers
 
-const port =process.env.port || 3200
-
 // Start Anything here
-app.listen(port, () => {
-    // ConnectToMySQLDatabase();
-    // AuthTheServer();
-    // GetMessagesFromServer();
-    console.log(`Example app listening on port ${port}`)
+app.listen(1780, () => {
+    ConnectToMySQLDatabase();
+    AuthTheServer();
+    GetMessagesFromServer();
 });
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
 
 let utf8decoder = new TextDecoder();
 // Use your dependencies here

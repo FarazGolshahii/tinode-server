@@ -1,0 +1,11 @@
+{
+  "name": "tinode-server",
+  "version": "1.0.0",
+  "description": "The config file [`tinode.conf`](./server/tinode.conf) contains extensive instructions on configuring the server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tinode.exe"
+  },
+  "author": "",
+  "license": "ISC"
+}
